@@ -1,0 +1,98 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML FORM</title>
+        <link rel="stylesheet" href="tshirts.css">
+        <script
+            src="https://kit.fontawesome.com/f635a28c1e.js"
+            crossorigin="anonymous"
+        ></script>
+        
+        <!-- <link rel="stylesheet" href="style2.css" /> -->
+    </head>
+
+    <body>
+        <form
+            name="myForm"
+            id="shirt_cart"
+            onsubmit="return validateForm()"
+            enctype="multipart/form-data"
+            method="put"
+        >
+            <h3 class ="cart_text">Your Cart</h3>
+            <div class="cart">
+                <div class="form-data">
+                    <label for="Address">Enter Address :</label>
+                    <input required type="text" name="Address" id="Address" />
+                    <br />
+                    <label for="color">Choose Color:</label>
+                    <input type="radio" id="black" name="color" value="black" />
+                    <label for="black">Black</label>
+                    <input type="radio" id="white" name="color" value="White" />
+                    <label for="white">White</label>
+                    <input type="radio" id="blue" name="color" value="blue" />
+                    <label for="blue">Blue</label> <br />
+
+                    <label for="size">Select Size:</label>
+                    <select required id="size" name="size">
+                        <option value="25">25</option>
+                        <option value="30">30</option>
+                        <option value="35">35</option>
+                        <option value="40">40</option>
+                    </select>
+                    <br />
+                    <label for="quantity">Quantity: </label>
+                    <select required id="quantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <br />
+                    <label for="price"
+                        >Total Order Price: <strong>25.49$</strong></label
+                    >
+                    <br />
+
+                    <div class="mt-1"></div>
+                    <label for="payment_options">Payment Options:</label>
+                    <br />
+                    <div class="options">
+                        <input
+                            type="radio"
+                            id="cc"
+                            name="payment"
+                            value="Credit/Debit Card"
+                        />
+                        <label for="cc">Credit/Debit Card</label> <br />
+                        <input
+                            type="radio"
+                            id="upi"
+                            name="payment"
+                            value="UPI"
+                        />
+                        <label for="upi">UPI</label> <br />
+                        <input
+                            type="radio"
+                            id="crypto"
+                            name="payment"
+                            value="Crypto"
+                        />
+                        <label for="crypto">Crypto-Wallet</label>
+                    </div>
+
+                    
+
+                    <button type="submit" class="btn">Place Order</button>
+                </div>
+                <div class="preview">
+                    <img src="https://res.cloudinary.com/dt0nu7zgk/image/upload/v1633287940/12867585-8f1c-bd01-3a0c-45f43cb8a093_1_800x_upksex.jpg" alt="" />
+                </div>
+            </div>
+        </form>
+    </body>
+
+    <script src ="./tshirt.js"></script>
+</html>

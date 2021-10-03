@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0.7rem;
+    background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #ff0000 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%); background-blend-mode: normal, normal, screen, overlay, normal;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-left: 10rem;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  20px 20px 60px #7b7b7b,
+             -20px -20px 60px #ffffff;
+}
+.cart_text{
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+   
+}
+    
+    
+}
+
+form h3 {
+    padding:"2rem"
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+input,
+select {
+    margin-bottom: 1rem;
+    padding: 0.25rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+    
+}
+
+.options {
+    margin-top: 1rem;
+}
+
+.options label {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.btn {
+    position:center;
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    color: white;
+    background: #333;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 750ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #2dbdff;
+}
+
+.preview {
+    display: flex;
+    width: 400px;
+    margin-right: 200px;
+    background: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview img {
+    height: 90%;
+    width: 90%;
+}
+
